@@ -60,6 +60,7 @@ RENT_MENU() {
       else
         # get customer info
         echo -e "\nWhat's your phone number?"
+<<<<<<< HEAD
         read PHONE_NUMBER
 
         CUSTOMER_NAME=$($PSQL "SELECT name FROM customers WHERE phone = '$PHONE_NUMBER'")
@@ -90,6 +91,15 @@ RENT_MENU() {
         
         # send to main menu
         MAIN_MENU "I have put you down for the $BIKE_INFO_FORMATTED Bike, $(echo $CUSTOMER_NAME | sed -r 's/^ *| *$//g')."
+=======
+
+        # if customer doesn't exist
+
+        # get new customer name
+
+        # insert new customer
+
+>>>>>>> 7a5bc80a63b3caf3a5b593974a37dd887d44fe75
       fi
     fi
   fi
